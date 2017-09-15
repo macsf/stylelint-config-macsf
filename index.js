@@ -273,14 +273,14 @@ const transitionAnimation = []
   .concat(vendorPrefixAll('animation-direction'))
 
 const propertyList = [
-  ...typography,
   ...positioning,
   ...displayAndBoxModel,
   ...flexbox,
   ...gridLayout,
-  ...accessibility,
+  ...typography,
   ...backgroundAndBorder,
-  ...transitionAnimation
+  ...transitionAnimation,
+  ...accessibility
 ]
 
 module.exports = {
