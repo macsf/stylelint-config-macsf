@@ -363,14 +363,7 @@ module.exports = {
       true,
       {
         severity: 'warning',
-        browsers: [
-          '> 5%',
-          'last 2 firefox versions',
-          'last 2 chrome versions',
-          'last 2 safari versions',
-          'last 2 edge versions',
-          'ie 11'
-        ]
+        browsers: ['> 2%']
       }
     ],
     'primer/selector-no-utility': true
