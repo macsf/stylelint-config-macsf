@@ -1,0 +1,48 @@
+{
+  "name": "stylelint-config-macsf",
+  "version": "1.0.0",
+  "description": "Personal stylelint (macsf)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/macsf/stylelint-config-macsf.git"
+  },
+  "scripts": {
+    "lint": "eslint --config .eslintrc . ",
+    "check-config":
+      "npm run lint && eslint --config .eslintrc --print-config .eslintrc | eslint-config-prettier-check ; exit 0"
+  },
+  "author": "Sutthichok Wongthavorn",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "lint",
+    "sass",
+    "scss",
+    "style guide",
+    "stylelint-config",
+    "stylelint",
+    "stylesheet"
+  ],
+  "bugs": {
+    "url": "https://github.com/macsf/stylelint-config-macsf/issues"
+  },
+  "homepage": "https://github.com/macsf/stylelint-config-macsf#readme",
+  "dependencies": {
+    "stylelint-config-standard": "^17.0.0",
+    "stylelint-no-unsupported-browser-features": "^1.0.0",
+    "stylelint-order": "^0.6.0",
+    "stylelint-scss": "^2.1.0",
+    "stylelint-selector-no-utility": "^1.6.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.0",
+    "eslint": "^4.6.1",
+    "eslint-config-macsf": "https://github.com/macsf/eslint-config-macsf",
+    "prettier": "^1.6.1",
+    "stylelint": "^8.1.1"
+  },
+  "peerDependencies": {
+    "stylelint": "^8.1.1"
+  }
+}
