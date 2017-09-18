@@ -363,7 +363,7 @@ module.exports = {
       true,
       {
         severity: 'warning',
-        browsers: ['> 2%']
+        browsers: ['> 2%', 'not op_mini > 0', 'not OperaMini all']
       }
     ],
     'primer/selector-no-utility': true
