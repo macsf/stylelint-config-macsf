@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/macsf/stylelint-config-macsf.git"
+    "url": "https://gitlab.com/macsf/stylelint-config-macsf.git"
   },
   "scripts": {
     "lint": "eslint --config .eslintrc . ",
@@ -25,9 +25,9 @@
     "stylesheet"
   ],
   "bugs": {
-    "url": "https://github.com/macsf/stylelint-config-macsf/issues"
+    "url": "https://gitlab.com/macsf/stylelint-config-macsf/issues"
   },
-  "homepage": "https://github.com/macsf/stylelint-config-macsf#readme",
+  "homepage": "https://gitlab.com/macsf/stylelint-config-macsf#readme",
   "dependencies": {
     "stylelint-config-standard": "^18.2.0",
     "stylelint-no-unsupported-browser-features": "^3.0.0",
