@@ -1,11 +1,11 @@
 const trbl = prefix => {
-  const rules = []
+  const rules = [];
 
   if (prefix) {
-    rules.push(prefix)
-    prefix += '-'
+    rules.push(prefix);
+    prefix += '-';
   } else {
-    prefix = ''
+    prefix = '';
   }
 
   return rules.concat([
@@ -13,34 +13,34 @@ const trbl = prefix => {
     `${prefix}right`,
     `${prefix}bottom`,
     `${prefix}left`
-  ])
-}
+  ]);
+};
 
 const vendorPrefixWkMz = property => {
-  const rules = []
-  const prefixes = ['-webkit', '-moz']
+  const rules = [];
+  const prefixes = ['-webkit', '-moz'];
 
-  return rules.concat(prefixes.map(p => `${p}-${property}`), property)
-}
+  return rules.concat(prefixes.map(p => `${p}-${property}`), property);
+};
 
 const vendorPrefixAll = property => {
-  const rules = []
-  const prefixes = ['-webkit', '-moz', '-ms', '-o']
+  const rules = [];
+  const prefixes = ['-webkit', '-moz', '-ms', '-o'];
 
-  return rules.concat(prefixes.map(p => `${p}-${property}`), property)
-}
+  return rules.concat(prefixes.map(p => `${p}-${property}`), property);
+};
 
-const minMax = suffix => [suffix, `min-${suffix}`, `max-${suffix}`]
-const xy = property => [property, `${property}-x`, `${property}-y`]
+const minMax = suffix => [suffix, `min-${suffix}`, `max-${suffix}`];
+const xy = property => [property, `${property}-x`, `${property}-y`];
 
 const positioning = []
   .concat('position')
   .concat(trbl())
-  .concat('z-index')
+  .concat('z-index');
 
 const displayAndBoxModel = []
   .concat(vendorPrefixWkMz('box-sizing'))
-  .concat(['display'])
+  .concat(['display']);
 
 const flexbox = [
   'flex',
@@ -55,7 +55,7 @@ const flexbox = [
   'align-self',
   'justify-content',
   'order'
-]
+];
 
 const gridLayout = [
   'grid',
@@ -83,7 +83,7 @@ const gridLayout = [
   .concat(trbl('padding'))
   .concat(trbl('margin'))
   .concat(xy('overflow'))
-  .concat(['clip', 'clear'])
+  .concat(['clip', 'clear']);
 
 const typography = [
   'font',
@@ -142,7 +142,7 @@ const typography = [
   'list-style-position',
   'list-style-type',
   'list-style-image'
-]
+];
 
 const accessibility = [
   'pointer-events',
@@ -171,7 +171,7 @@ const accessibility = [
   'nav-right',
   'nav-down',
   'nav-left'
-]
+];
 
 const backgroundAndBorder = [
   'background',
@@ -253,7 +253,7 @@ const backgroundAndBorder = [
   'mix-blend-mode',
   'opacity',
   '-ms-interpolation-mode'
-]
+];
 
 const transitionAnimation = []
   .concat(vendorPrefixAll('transition'))
@@ -270,7 +270,7 @@ const transitionAnimation = []
   .concat(vendorPrefixAll('animation-timing-function'))
   .concat(vendorPrefixAll('animation-delay'))
   .concat(vendorPrefixAll('animation-iteration-count'))
-  .concat(vendorPrefixAll('animation-direction'))
+  .concat(vendorPrefixAll('animation-direction'));
 
 const propertyList = [
   ...positioning,
@@ -281,7 +281,7 @@ const propertyList = [
   ...backgroundAndBorder,
   ...transitionAnimation,
   ...accessibility
-]
+];
 
 module.exports = {
   plugins: [
@@ -290,7 +290,7 @@ module.exports = {
     'stylelint-scss',
     'stylelint-order'
   ],
-  extends: 'stylelint-config-standard',
+  extends: '/usr/local/lib/node_modules/stylelint-config-standard',
   rules: {
     'at-rule-no-unknown': null,
     'at-rule-no-vendor-prefix': true,
@@ -368,4 +368,4 @@ module.exports = {
     ],
     'primer/selector-no-utility': true
   }
-}
+};
