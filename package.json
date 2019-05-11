@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-macsf",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Personal stylelint (macsf)",
   "main": "index.js",
   "repository": {
