@@ -29,20 +29,20 @@
   },
   "homepage": "https://gitlab.com/macsf/stylelint-config-macsf#readme",
   "dependencies": {
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-no-unsupported-browser-features": "^3.0.0",
-    "stylelint-order": "^0.8.1",
-    "stylelint-scss": "^3.1.1",
-    "stylelint-selector-no-utility": "^1.8.7"
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-no-unsupported-browser-features": "^3.0.2",
+    "stylelint-order": "^3.0.0",
+    "stylelint-scss": "^3.6.1",
+    "stylelint-selector-no-utility": "^4.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
-    "eslint": "^4.19.1",
-    "eslint-config-macsf": "https://github.com/macsf/eslint-config-macsf",
-    "prettier": "^1.13.5",
-    "stylelint": "^9.2.1"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-macsf": "https://gitlab.com/macsf/eslint-config-macsf",
+    "prettier": "^1.17.0",
+    "stylelint": "^10.0.1"
   },
   "peerDependencies": {
-    "stylelint": "^9.2.1"
+    "stylelint": "^10.0.1"
   }
 }
